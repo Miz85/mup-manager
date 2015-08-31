@@ -11,3 +11,5 @@ reywood:bootstrap3-sass
 iron:router
 aldeed:collection2
 dburles:collection-helpers
+aldeed:autoform
+meteortoys:allthings

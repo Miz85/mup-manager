@@ -29,7 +29,7 @@ Package.registerBuildPlugin({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
-  api.addFiles('mup.js');
+  api.addFiles('server/mup.js');
 });
 
 Package.onTest(function(api) {

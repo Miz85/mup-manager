@@ -1,0 +1,22 @@
+<template name="projectsList">
+   <table class="table table-hover" style="margin-top:20px">
+     <thead>
+       <th>Name</th>
+       <th>Path</th>
+       <th>Actions</th>
+     </thead>
+     <tbody>
+      {{#each projects}}
+        <tr>
+          <td>{{appName}}</td>
+          <td>{{app}}</td>
+          <td>
+            {{#linkTo route="project.edit" class="btn btn-default btn-xs"}}Edit{{/linkTo}}
+            <a id="setup-server" href="#" class="btn btn-default btn-xs">Setup Server</a>
+            <input type="hidden" value={{_id}}>
+          </td>
+        </tr>
+      {{/each}}
+     </tbody>
+   </table>
+</template>
